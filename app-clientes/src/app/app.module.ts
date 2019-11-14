@@ -5,7 +5,8 @@ import { AppComponent } from './app.component';
 import {HeaderComponent} from './header/header.component';
 import { NuevoComponent } from './nuevo/nuevo.component'
 import {FooterComponent} from './footer/footer.component';
-import {DirectivaComponent} from './directiva/directiva.component'
+import {DirectivaComponent} from './directiva/directiva.component';
+import { ClientesComponent } from './clientes/clientes.component'
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import {DirectivaComponent} from './directiva/directiva.component'
     HeaderComponent,
     NuevoComponent,
     FooterComponent,
-    DirectivaComponent
+    DirectivaComponent,
+    ClientesComponent
 
   ],
   imports: [
