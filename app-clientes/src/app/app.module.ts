@@ -7,6 +7,7 @@ import { NuevoComponent } from './nuevo/nuevo.component'
 import {FooterComponent} from './footer/footer.component';
 import {DirectivaComponent} from './directiva/directiva.component';
 import { ClientesComponent } from './clientes/clientes.component'
+import {LoginComponent} from './usuarios/login.component';
 import { ClienteService } from './clientes/cliente.service';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -19,7 +20,8 @@ const routes: Routes = [
   { path: '' , redirectTo: '/clientes', pathMatch: 'full'},
   { path: 'directivas', component: DirectivaComponent },
   { path: 'clientes', component: ClientesComponent},
-  { path:'clientes/form', component: FormComponent }
+  { path:'clientes/form', component: FormComponent },
+  { path: 'login', component: LoginComponent }
 ];
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ const routes: Routes = [
     FooterComponent,
     DirectivaComponent,
     ClientesComponent,
-    FormComponent
+    FormComponent,
+    LoginComponent
 
 
   ],
