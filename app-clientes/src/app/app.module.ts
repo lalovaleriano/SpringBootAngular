@@ -21,6 +21,7 @@ const routes: Routes = [
   { path: 'directivas', component: DirectivaComponent },
   { path: 'clientes', component: ClientesComponent},
   { path:'clientes/form', component: FormComponent },
+  { path:'clientes/form:id', component: FormComponent },
   { path: 'login', component: LoginComponent }
 ];
 @NgModule({
@@ -38,9 +39,10 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     FormsModule,
     RouterModule.forRoot(routes),
-    HttpClientModule
+    
   ],
   providers: [ClienteService],
   bootstrap: [AppComponent]

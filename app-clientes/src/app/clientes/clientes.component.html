@@ -15,6 +15,7 @@
   <th>apellido</th>
   <th>email</th>
   <th>fecha</th>
+  <th>editar</th>
 </tr>
     </thead>
 
@@ -25,6 +26,9 @@
         <td>{{cliente.apellido}}</td>
         <td>{{cliente.email}}</td>
         <td>{{cliente.createAt}}</td>
+        <td>    
+          <button type="button" name="editar" [routerLink]="['/directivas/directiva']" class="btn btn-primary btn-sm">editar</button>
+        </td>
       </tr>
 
     </tbody>
